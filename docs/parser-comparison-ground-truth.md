@@ -125,7 +125,7 @@ manifest 경로: expected.revenue.periods.prior.monthly[0]
 
 ## 근거 파일
 
-아래 경로는 검증을 수행한 원래 프로젝트 작업 폴더를 기준으로 한다. 이 문서 전용 저장소에 해당 데이터나 파서 구현이 포함되어 있다는 뜻은 아니다. `../Data/`는 당시 프로젝트의 형제 디렉터리에 있던 로컬 데이터다. 원본 데이터·생성 코드·파서 구현은 이 저장소에 복사하지 않았다.
+아래 경로 중 `../Data/`는 원래 검증 프로젝트의 형제 디렉터리에 있던 로컬 데이터다. 데이터 원본과 생성기는 이 저장소에 포함하지 않는다. 후속 코드 게시에서 `parser/`, `parser_ai/` 구현과 `experiments/`의 고정 계획 재생 코드를 추가했으며, 재현 조건은 [현재 검증·재현 범위](source-snapshot.md)를 참고한다.
 
 - `../Data/dummy/manifest_baseline.json`: 기존 기준 합계와 생성 검증 기록
 - `../Data/.dummy_build/strict_v3/baseline_fixture.json`: 합성 데이터 원본
@@ -134,4 +134,4 @@ manifest 경로: expected.revenue.periods.prior.monthly[0]
 - `parser/src/excel_parser/benchmark/manifest.py`: 117개 그룹의 금액 채점
 - `parser/src/excel_parser/benchmark/evaluation.py`: 별도 셀별 정답 평가
 
-이 문서는 정답셋의 구성과 검증 범위를 기록한다. 정답셋 추가 생성이나 파서 로직 변경은 포함하지 않는다.
+이 문서는 정답셋의 구성과 검증 범위를 기록한다. 코드 게시에서도 새로운 셀별 정답셋 생성이나 운영 파서의 해석 정책 변경은 수행하지 않았다.

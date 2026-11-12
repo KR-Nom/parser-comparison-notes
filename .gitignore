@@ -1,0 +1,20 @@
+# Local credentials and generated files
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+cache/
+output/
+logs/
+Data/
+data/
+*.xlsx
+*.xlsm
+*.xlsb
+*.xls
